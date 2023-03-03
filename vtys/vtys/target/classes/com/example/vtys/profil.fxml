@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="547.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="com.example.vtys.Profil_controller">
+   <children>
+      <AnchorPane layoutX="204.0" prefHeight="547.0" prefWidth="672.0" style="-fx-background-color: f5f5f5;">
+         <children>
+            <Button fx:id="vt_kaydet" layoutX="228.0" layoutY="432.0" mnemonicParsing="false" onAction="#vt_kaydet_action" prefHeight="30.0" prefWidth="244.0" style="-fx-background-color: #7162FE; -fx-background-radius: 100;" text="Bilgilerimi Güncelle">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <textFill>
+                  <LinearGradient endX="0.00473933649289094" endY="1.0" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="giris_buton" layoutX="292.0" layoutY="134.0" mnemonicParsing="false" onAction="#imageChooser" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: gray;" text="Resim Seç">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <textFill>
+                  <LinearGradient endX="0.00473933649289094" endY="1.0" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <ImageView id="resim" fx:id="imageView" fitHeight="83.0" fitWidth="152.0" layoutX="300.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resimyok.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="36.0" layoutY="197.0" prefHeight="17.0" prefWidth="206.0" style="-fx-text-fill: black;" text="Adı" textFill="#2f2e2e" />
+            <TextField fx:id="ad" layoutX="109.0" layoutY="196.0" prefHeight="11.0" prefWidth="199.0" styleClass="input" />
+            <Label layoutX="35.0" layoutY="231.0" prefHeight="24.0" prefWidth="206.0" style="-fx-text-fill: black;" text="Soyadı" textFill="#2f2e2e" />
+            <TextField fx:id="telno" layoutX="109.0" layoutY="345.0" prefHeight="18.0" prefWidth="199.0" styleClass="input" />
+            <Label layoutX="36.0" layoutY="268.0" prefHeight="24.0" prefWidth="206.0" style="-fx-text-fill: black;" text="Mail" textFill="#2f2e2e" />
+            <TextField fx:id="sifre" layoutX="109.0" layoutY="305.0" prefHeight="14.0" prefWidth="199.0" styleClass="input" />
+            <Label layoutX="36.0" layoutY="304.0" prefHeight="24.0" prefWidth="85.0" style="-fx-text-fill: black;" text="Şifre" textFill="#2f2e2e" />
+            <TextField fx:id="mail" layoutX="109.0" layoutY="268.0" prefHeight="14.0" prefWidth="199.0" styleClass="input" />
+            <Label layoutX="36.0" layoutY="345.0" prefHeight="24.0" prefWidth="85.0" style="-fx-text-fill: black;" text="Telefon No" textFill="#2f2e2e" />
+            <TextField fx:id="soyad" layoutX="109.0" layoutY="232.0" prefHeight="10.0" prefWidth="199.0" styleClass="input" />
+            <Label layoutX="378.0" layoutY="278.0" style="-fx-text-fill: black;" text="Adres" textFill="#2f2e2e" />
+            <TextArea fx:id="adres" layoutX="426.0" layoutY="282.0" prefHeight="93.0" prefWidth="200.0" wrapText="true" />
+            <ComboBox fx:id="il_combo" layoutX="426.0" layoutY="196.0" onAction="#il_selected" prefHeight="25.0" prefWidth="200.0" style="-fx-border-color: lightgray; -fx-background-color: white;" stylesheets="@stil.css" />
+            <ComboBox fx:id="ilce_combo" layoutX="426.0" layoutY="237.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-color: lightgray; -fx-background-color: white;" stylesheets="@stil.css" />
+            <Label layoutX="376.0" layoutY="200.0" prefHeight="17.0" prefWidth="125.0" style="-fx-text-fill: black;" text="İl" textFill="#2f2e2e" />
+            <Label layoutX="376.0" layoutY="241.0" prefHeight="17.0" prefWidth="125.0" style="-fx-text-fill: black;" text="İlçe" textFill="#2f2e2e" />
+            <Label fx:id="uyari" alignment="CENTER" layoutX="78.0" layoutY="502.0" prefHeight="18.0" prefWidth="543.0" />
+         </children>
+      </AnchorPane>
+      <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="204.0" style="-fx-background-color: #7162FE;">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="68.7" right="10.0" top="40.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="216.0" text="KAYBETTİM" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="anasayfa" alignment="TOP_LEFT" layoutX="10.0" layoutY="178.0" mnemonicParsing="false" onAction="#anasayfa" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Ana Sayfa" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="profil" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#profil_button" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Profilim" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="keiv" alignment="TOP_LEFT" layoutX="10.0" layoutY="133.0" mnemonicParsing="false" onAction="#keiv_button" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Kayıp Eşya İlanı Ver" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="beiv" alignment="TOP_LEFT" layoutX="10.0" layoutY="260.0" mnemonicParsing="false" onAction="#beiv_button" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Bulunan Eşya İlanı Ver" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="kei" alignment="TOP_LEFT" layoutX="10.0" layoutY="219.0" mnemonicParsing="false" onAction="#kayipesyagoruntule" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Kayıp Eşya İlanları" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="bei" alignment="TOP_LEFT" layoutX="10.0" layoutY="174.0" mnemonicParsing="false" onAction="#bulunanesyagoruntule" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Bulunan Eşya İlanları" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="mesaj" alignment="TOP_LEFT" layoutX="10.0" layoutY="215.0" mnemonicParsing="false" onAction="#mesaj_button" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Mesajlar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="cikis" alignment="TOP_LEFT" layoutX="10.0" layoutY="256.0" mnemonicParsing="false" onAction="#cikis_button" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Çıkış" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

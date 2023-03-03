@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="520.0" prefWidth="970.0" stylesheets="@stil.css" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="com.example.vtys.Anasayfa_controller">
+   <children>
+      <HBox layoutX="-1.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="520.0" prefWidth="970.0">
+         <children>
+            <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="200.0" style="-fx-background-color: #7162FE;">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="68.7" right="10.0" top="40.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="216.0" text="KAYBETTİM" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="anasayfa" alignment="TOP_LEFT" layoutX="10.0" layoutY="178.0" mnemonicParsing="false" onAction="#anasayfayagit" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Ana Sayfa" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="profil" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#profil_buton" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Profilim" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="keiv" alignment="TOP_LEFT" layoutX="10.0" layoutY="133.0" mnemonicParsing="false" onAction="#keiv_buton" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Kayıp Eşya İlanı Ver" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="beiv" alignment="TOP_LEFT" layoutX="10.0" layoutY="260.0" mnemonicParsing="false" onAction="#beiv_buton" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Bulunan Eşya İlanı Ver" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="kei" alignment="TOP_LEFT" layoutX="10.0" layoutY="219.0" mnemonicParsing="false" onAction="#kayipesyagoruntule" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Kayıp Eşya İlanları" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="bei" alignment="TOP_LEFT" layoutX="10.0" layoutY="174.0" mnemonicParsing="false" onAction="#bulunanesyagoruntule" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Bulunan Eşya İlanları" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="mesaj" alignment="TOP_LEFT" layoutX="10.0" layoutY="215.0" mnemonicParsing="false" onAction="#mesajlar_buton" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Mesajlar" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="cikis" alignment="TOP_LEFT" layoutX="10.0" layoutY="256.0" mnemonicParsing="false" onAction="#cikisyap" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Çıkış" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="istatistik" alignment="TOP_LEFT" layoutX="10.0" layoutY="464.0" mnemonicParsing="false" onAction="#istatistik_buton" prefHeight="30.0" prefWidth="187.0" style="-fx-background-radius: 0 100 100 0; -fx-background-color: #5F3DF1;" stylesheets="@stil.css" text="Uygulama İstatistikleri" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children></VBox>
+            <VBox maxWidth="-Infinity" prefHeight="420.0" prefWidth="770.0">
+               <children>
+                  <VBox prefHeight="419.0" prefWidth="622.0">
+                     <children>
+                        <HBox maxWidth="-Infinity" prefHeight="30.0" prefWidth="770.0">
+                           <children>
+                              <Label style="-fx-background-color: #5F3DF1; -fx-background-radius: 0 100 100 0;" text="Kayıp Eşya İlanları" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="10.0" right="40.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Button fx:id="ktumu" mnemonicParsing="false" onAction="#kayipesyagoruntule" style="-fx-background-color: #7162FE; -fx-background-radius: 100;" stylesheets="@stil.css" text="Tümünü Gör" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <ScrollPane cache="true" hbarPolicy="ALWAYS" minHeight="-Infinity" prefHeight="220.0" prefWidth="770.0" vbarPolicy="NEVER">
+                           <content>
+                              <HBox fx:id="khbox" prefHeight="205.0" prefWidth="770.0" style="-fx-background-color: #EAEAEA;" />
+                           </content>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin></ScrollPane>
+                        <HBox layoutX="10.0" layoutY="20.0" maxWidth="-Infinity" prefHeight="18.0" prefWidth="770.0">
+                           <children>
+                              <Label style="-fx-background-color: #5F3DF1; -fx-background-radius: 0 100 100 0;" text="Bulunan Eşya İlanları" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="10.0" right="22.4" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Button fx:id="btumu" mnemonicParsing="false" onAction="#bulunanesyagoruntule" style="-fx-background-color: #7162FE; -fx-background-radius: 100;" stylesheets="@stil.css" text="Tümünü Gör" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <ScrollPane hbarPolicy="ALWAYS" minHeight="-Infinity" prefHeight="220.0" prefWidth="770.0" vbarPolicy="NEVER">
+                           <content>
+                              <HBox fx:id="bhbox" prefHeight="205.0" prefWidth="770.0" style="-fx-background-color: #EAEAEA;" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children></VBox>
+         </children></HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,179 @@
+.anchorPane{
+   -fx-background-color: #f5f5f5;
+}
+/*
+.sol_ekran{
+   -fx-background-image: url(background.gif);
+   -fx-background-size: cover;
+}*/
+
+.Pane{
+   -fx-background-color: white;
+   -fx-background-radius: 10;
+}
+/*
+#resim{
+   -fx-image: url(login.png);
+
+}*/
+
+.button{
+   -fx-background-color: #1e90ff;
+   -fx-text-fill: white;
+   -fx-background-radius: 10;
+   -fx-cursor: hand;
+}
+
+.input{
+   -fx-background-radius: 10;
+   -fx-focus-color: #1e90ff;
+   -fx-prompt-text-fill: #808080;
+}
+
+.yetki_combo {
+
+   -fx-background-radius: 10;
+   -fx-background-radius-color: black;
+   -fx-background-color: white;
+}
+
+
+.tarihlabel {
+   -fx-background-color:  #7162FE;
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-background-radius: 5;
+   -fx-min-width: 150;
+   -fx-alignment: center;
+   -fx-padding: 5px 0px 5px 0px;
+   -fx-border-insets: 5px 0px 5px 0px;
+   -fx-background-insets: 5px 0px 5px 0px;
+   -fx-font-size: 10;
+}
+
+
+.basliklabel {
+   -fx-font-weight: bold;
+   -fx-min-width: 150;
+   -fx-alignment: center;
+   -fx-padding: 5px 0px 5px 0px;
+   -fx-border-insets: 5px 0px 5px 0px;
+   -fx-background-insets: 5px 0px 5px 0px;
+   -fx-font-size: 10;
+}
+
+.konumlabel {
+   -fx-min-width: 150;
+   -fx-alignment: center;
+   -fx-padding: 5px 0px 5px 0px;
+   -fx-border-insets: 5px 0px 5px 0px;
+   -fx-background-insets: 5px 0px 5px 0px;
+   -fx-font-size: 10;
+}
+
+.inceleb{
+   -fx-background-color:  #7162FE;
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-background-radius: 100;
+   -fx-alignment: center;
+   -fx-padding: 5px 0px 5px 0px;
+   -fx-border-insets: 5px 0px 5px 0px;
+   -fx-background-insets: 5px 0px 5px 0px;
+   -fx-font-size: 12;
+}
+
+.kutu{
+   -fx-padding: 10px 20px 10px 20px;
+   -fx-border-insets: 5px 10px 5px 10px;
+   -fx-background-insets: 5px 10px 5px 10px;
+   -fx-background-color: white;
+   -fx-background-radius: 10;
+}
+
+.kategoriba{
+   -fx-background-color:  #7162FE;
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-background-radius: 20;
+   -fx-alignment: center;
+   -fx-padding: 10 20 10 20;
+   -fx-border-insets: 5;
+   -fx-background-insets: 5;
+   -fx-font-size: 14;
+}
+
+.mesajkutusu{
+   -fx-background-color: white;
+   -fx-min-height: 70;
+   -fx-padding: 15;
+   -fx-background-insets: 5;
+   -fx-border-insets: 5;
+}
+
+.ad{
+   -fx-font-weight: bold;
+   -fx-font-size: 14;
+   -fx-padding: 5;
+   -fx-background-insets: 5;
+   -fx-border-insets: 5;
+}
+
+.mesajmetin{
+   -fx-font-size: 12;
+   -fx-padding: 5;
+   -fx-background-insets: 5;
+   -fx-border-insets: 5;
+   -fx-background-color: transparent;
+   -fx-text-fill: black;
+}
+
+.mesajblogu{
+   -fx-background-color:  #7162FE;
+   -fx-min-height: 70;
+   -fx-padding: 20 100 20 25;
+   -fx-background-insets: 10 100 10 10;
+   -fx-border-insets: 10 100 10 10;
+   -fx-background-radius: 10 10 10 0;
+}
+
+.mesajblogu2{
+   -fx-background-color:  tomato;
+   -fx-min-height: 70;
+   -fx-padding: 20 30 20 115;
+   -fx-background-insets: 10 10 10 100;
+   -fx-border-insets: 10 10 10 100;
+   -fx-background-radius: 10 10 0 10;
+}
+
+.mesajmetni{
+   -fx-font-weight: bold;
+   -fx-font-size: 14;
+   -fx-text-fill: white;
+   -fx-padding: 5;
+   -fx-background-insets: 5;
+   -fx-border-insets: 5;
+}
+
+.saat{
+   -fx-font-weight: bold;
+   -fx-font-size: 12;
+   -fx-text-fill: white;
+   -fx-padding: 5 5 10 5;
+   -fx-background-insets: 5;
+   -fx-border-insets: 5;
+   -fx-alignment: BOTTOM_RIGHT;
+}
+
+.gun {
+   -fx-background-color:  #7162FE;
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-background-radius: 5;
+   -fx-min-width: 750;
+   -fx-alignment: center;
+   -fx-padding: 5px 0px 5px 0px;
+   -fx-border-insets: 5px 0px 5px 0px;
+   -fx-background-insets: 5px 0px 5px 0px;
+   -fx-font-size: 10;
+}

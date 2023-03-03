@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="820.0" style="-fx-background-color: #7162FE;" styleClass="anchorPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.vtys.Uye_ol_controller">
+   <children>
+      <AnchorPane layoutY="-3.0" prefHeight="423.0" prefWidth="377.0" styleClass="sol_ekran">
+         <children>
+            <ImageView fitHeight="420.0" fitWidth="471.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@giris_resmi.jpeg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView id="resim" fitHeight="88.0" fitWidth="94.0" layoutX="575.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon.png" />
+         </image></ImageView>
+      <TextField fx:id="ad" layoutX="524.0" layoutY="172.0" prefHeight="26.0" prefWidth="204.0" promptText="Adınız" styleClass="input" />
+      <TextField fx:id="mail" layoutX="523.0" layoutY="265.0" prefHeight="27.0" prefWidth="204.0" promptText="Mailiniz" styleClass="input">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="sifre" layoutX="523.0" layoutY="298.0" prefHeight="27.0" prefWidth="204.0" promptText="Şifreniz" styleClass="input">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="giris_buton" layoutX="523.0" layoutY="338.0" mnemonicParsing="false" onAction="#uyeOl" prefHeight="27.0" prefWidth="204.0" style="-fx-background-color: white;" text="Üye Ol">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="uyari" alignment="CENTER" contentDisplay="CENTER" layoutX="433.0" layoutY="394.0" prefHeight="20.0" prefWidth="398.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="566.0" layoutY="109.0" text="KAYBETTİM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="468.0" layoutY="142.0" text="Hoş geldiniz. Aşağıdaki bilgileri doldurarak üye olunuz." textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="uye_buton" layoutX="592.0" layoutY="371.0" mnemonicParsing="false" onAction="#girisYap" style="-fx-background-color: transparent;" text="Giriş Yap" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="tel" layoutX="523.0" layoutY="234.0" prefHeight="26.0" prefWidth="204.0" promptText="Telefon Numaranız" styleClass="input" />
+      <TextField fx:id="soyad" layoutX="523.0" layoutY="203.0" prefHeight="26.0" prefWidth="204.0" promptText="Soyadınız" styleClass="input" />
+   </children>
+</AnchorPane>
